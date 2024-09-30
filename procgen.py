@@ -1,4 +1,3 @@
-""" Module for Room Types """
 from typing import Tuple
 
 from game_map import GameMap
@@ -6,16 +5,14 @@ import tile_types
 
 
 class RectangularRoom:
-    """ Governs the shape and properties of a rectangular room """
     def __init__(self, x: int, y: int, width: int, height: int):
         self.x1 = x
         self.y1 = y
-        self.x2 = width
-        self.y2 = height
+        self.x2 = x + width
+        self.y2 = y + height
 
     @property
     def center(self) -> Tuple[int, int]:
-        """ Returns the center of the room """
         center_x = int((self.x1 + self.x2) / 2)
         center_y = int((self.y1 + self.y2) / 2)
 

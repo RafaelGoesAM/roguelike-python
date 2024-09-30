@@ -1,4 +1,3 @@
-""" Module for representing just about everything in the game world """
 from typing import Tuple
 
 
@@ -12,7 +11,7 @@ class Entity:
         self.char = char
         self.color = color
 
-    def move(self, dx: int, dy: int):
-        """ Move the entity by a given amount """
+    def move(self, dx: int, dy: int) -> None:
+        # Move the entity by a given amount
         self.x += dx
         self.y += dy

@@ -3,7 +3,7 @@ This module acts as the executable file for the
 part 1 of the roguelike tutorial for python
 """
 
-# Imports
+# !/usr/bin/env python3
 import tcod
 
 from engine import Engine
@@ -13,7 +13,6 @@ from input_handlers import EventHandler
 
 
 def main() -> None:
-    """ Method for executing the game """
     screen_width = 80
     screen_height = 50
 

@@ -1,4 +1,3 @@
-""" Module for creating the maps and tiles on it """
 from typing import Tuple
 
 import numpy as np  # type: ignore
